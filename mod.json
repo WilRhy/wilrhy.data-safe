@@ -10,34 +10,28 @@
   "name": "Data Safe",
   "version": "v1.0.0",
   "developer": "WilRhy",
-  "description": "Prevents data loss with Boomlings rate-limiting and Google Drive file exports and stuff.",
+  "description": "Allows you to save your data to your Boomlings/GD account so all you have to do, is login and load on a new device or refresh login!",
   "links": {
 	"homepage": "https://wilrhy.carrd.co/",
 	"source": "https://github.com/WilRhy/wilrhy.data-safe",
 	"community": "https://pastebin.com/raw/2KDB2L0M"
   },
-
   "dependencies": {
-    "geode.node-ids": ">=v1.23.3"
+    "geode.node-ids": ">=v1.23.3",
+    "deaen.gdrivebackup": ">=v1.2.0"
   },
   "settings": {
     "show-notifications": {
       "type": "bool",
       "name": "Show Notifications",
-      "description": "Toggle 'Saving...' notifications at the bottom of the screen.",
+      "description": "Toggle toast message notifications at the bottom of the screen.",
       "default": true
     },
     "auto-cloud-backup": {
       "type": "bool",
       "name": "Auto Boomlings Backup",
-      "description": "Periodically attempt a secure cloud backup to your registered GD/Boomlings account.",
-      "default": false
-    },
-    "gdrive-sync": {
-      "type": "bool",
-      "name": "Google Drive Syncing",
-      "description": "Export copy of local save files directly to a designated Google Drive folder.",
-      "default": false
+      "description": "Periodically trigger secure cloud backups to your active GD account.",
+      "default": true
     }
   }
 }
