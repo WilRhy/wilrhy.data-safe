@@ -10,15 +10,14 @@
   "name": "Data Safe",
   "version": "v1.0.0",
   "developer": "WilRhy",
-  "description": "Allows you to save your data to your Boomlings/GD account so all you have to do, is login and load on a new device or refresh login!",
-  "links": {
-	"homepage": "https://wilrhy.carrd.co/",
-	"source": "https://github.com/WilRhy/wilrhy.data-safe",
-	"community": "https://pastebin.com/raw/2KDB2L0M"
-  },
+  "description": "Tryna be the best data saving mod out on Geode.",
   "dependencies": {
     "geode.node-ids": ">=v1.23.3",
     "deaen.gdrivebackup": ">=v1.2.0"
+  },
+  "links": {
+    "homepage": "https://wilrhy.carrd.co",
+    "source": "https://github.com/WilRhy/wilrhy.data-safe"
   },
   "settings": {
     "show-notifications": {
@@ -32,6 +31,30 @@
       "name": "Auto Boomlings Backup",
       "description": "Periodically trigger secure cloud backups to your active GD account.",
       "default": true
+    },
+    "test-save-btn": {
+      "type": "bool",
+      "name": "Run Test Save & Notification",
+      "description": "Flip this switch to force a local backup and sync to Boomlings.",
+      "default": false
+    },
+    "open-folder-btn": {
+      "type": "bool",
+      "name": "Open Save File Folder",
+      "description": "Opens your specific mod sandbox save folder in your file explorer.",
+      "default": false
+    },
+    "export-backup-btn": {
+      "type": "bool",
+      "name": "Export Backup File",
+      "description": "Flip to export your Data Safe backup to your mod directory.",
+      "default": false
+    },
+    "import-backup-btn": {
+      "type": "bool",
+      "name": "Import & Restore Backup",
+      "description": "Opens a system window to pick and import an external save file (.dat / .bak).",
+      "default": false
     }
   }
 }
